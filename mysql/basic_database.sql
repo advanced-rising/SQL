@@ -31,3 +31,28 @@ CREATE TABLE dogs (
 
 -- 테이블 삭제
 DROP TABLE cats;
+
+-- 테이블 보기
+SHOW COLUMNS FROM cats;
+
+-- 테이블 정렬
+DESC dogs;
+
+-- 테이블 벨류 삽입
+INSERT INTO cats (name, age) 
+VALUES ('Blue Steele', 5);
+
+INSERT INTO cats (name, age) 
+VALUES ('Jenkins', 7);
+
+-- 테이블 행 모두보기
+SELECT * FROM cats; 
+
+
+-- 테이블 벨류 다중 삽입
+INSERT INTO cats (name, age) 
+VALUES 
+  ('Meatball', 5), 
+  ('Turkey', 1), 
+  ('Potato Face', 15);
+
