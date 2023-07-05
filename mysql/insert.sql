@@ -5,6 +5,14 @@ CREATE TABLE people
     age INT
   );
 
+-- 테이블 벨류 다중 삽입
+INSERT INTO cats (name, age) 
+VALUES 
+  ('Meatball', 5), 
+  ('Turkey', 1), 
+  ('Potato Face', 15);
+
+
 
 INSERT INTO people(first_name, last_name, age)
 VALUES ('Tina', 'Belcher', 13);
