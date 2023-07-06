@@ -49,10 +49,18 @@ VALUES ('Jenkins', 7);
 SELECT * FROM cats; 
 
 
--- 테이블 벨류 다중 삽입
-INSERT INTO cats (name, age) 
-VALUES 
-  ('Meatball', 5), 
-  ('Turkey', 1), 
-  ('Potato Face', 15);
+-- 기본키 지정하기:
+CREATE TABLE unique_cats (
+	cat_id INT PRIMARY KEY,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL
+);
 
+
+-- 다른 방법:
+CREATE TABLE unique_cats2 (
+	cat_id INT,
+    name VARCHAR(100) NOT NULL,
+    age INT NOT NULL,
+    PRIMARY KEY (cat_id)
+);
